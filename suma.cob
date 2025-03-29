@@ -1,0 +1,25 @@
+        IDENTIFICATION DIVISION.
+        PROGRAM-ID.           SUMA.
+        AUTHOR.               ISAAC MORENO.
+        INSTALLATION.         DESARROLLO.
+        DATE-WRITTEN.         19/03/2025.
+        DATE-COMPILED.        19/03/2025.
+        SECURITY.             NO ES CONFIDENCIAL.
+
+        ENVIRONMENT DIVISION.
+        CONFIGURATION SECTION.
+        SOURCE-COMPUTER.          MACBOOK-PRO.
+        OBJECT-COMPUTER.          MAACBOOK-PRO.
+
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+        01 VALOR-UNO PIC 9(9) COMP.
+        01 VALOR-DOS PIC 9(9) COMP.
+        01 RESULTADO PIC 9(3) COMP.
+        PROCEDURE DIVISION.
+            SET VALOR-UNO TO 97.
+            SET VALOR-DOS TO 45.
+            ADD VALOR-UNO VALOR-DOS GIVING RESULTADO.
+            DISPLAY "VAL1 + VAL2  = " RESULTADO.
+            STOP RUN.
+        END PROGRAM SUMA.
